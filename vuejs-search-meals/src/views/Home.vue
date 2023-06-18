@@ -15,7 +15,7 @@
 
 <script setup>
 import { computed } from "vue";
-import store from "../src/store";
+import store from "../store";
 
 const meals = computed(() => store.state.meals);
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
