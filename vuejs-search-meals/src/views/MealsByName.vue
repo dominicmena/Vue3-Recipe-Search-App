@@ -21,13 +21,13 @@
         class="rounded-t-xl h-48 w-full object-cover"
       />
       <div class="p-3">
-        <h3 class="p-3 font-semibold">{{ meal.strMeal }}</h3>
-        <p>
+        <h3 class="font-bold">{{ meal.strMeal }}</h3>
+        <p class="mb-4">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum
           dolor asperiores excepturi?
         </p>
-        <div class="p-3">
-          <a :href="meal.strYoutube" target="_blank">Youtube</a>
+        <div>
+          <a :href="meal.strYoutube" target="_blank" class="px-3 py-2 rounded border-2 border-red-600 hover:bg-red-500 hover:text-white transition-colors">Youtube</a>
           <router-link to="/"> View </router-link>
         </div>
       </div>
