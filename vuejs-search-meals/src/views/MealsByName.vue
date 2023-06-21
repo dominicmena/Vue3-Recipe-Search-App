@@ -10,7 +10,7 @@
  />
 </div>
 
-<div class="grid grid-cols-1 md:grid-cols-3">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-5">
    <div v-for="meal of meals" :key="meal.idMeal">
       <img :src="meal.strMealThumb" alt="strMeal"/>
       <h3>{{meal.strMeal}}</h3>
