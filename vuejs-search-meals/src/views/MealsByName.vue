@@ -20,14 +20,17 @@
         alt="strMeal"
         class="rounded-t-xl h-48 w-full object-cover"
       />
-<div class="p-3">
-   <h3 class="p-3 font-semibold">{{ meal.strMeal }}</h3>
-   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum dolor asperiores excepturi? Animi aliquid quos, totam fugit dolores exercitationem, facilis velit ad cum expedita voluptas, omnis incidunt? Natus, ipsum odio!</p>
-   <div class="p-3">
-     <a :href="meal.strYoutube" target="_blank">Youtube</a>
-     <router-link to="/"> View </router-link>
-   </div>
-</div>
+      <div class="p-3">
+        <h3 class="p-3 font-semibold">{{ meal.strMeal }}</h3>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+          dolor asperiores excepturi?
+        </p>
+        <div class="p-3">
+          <a :href="meal.strYoutube" target="_blank">Youtube</a>
+          <router-link to="/"> View </router-link>
+        </div>
+      </div>
     </div>
   </div>
 </template>
