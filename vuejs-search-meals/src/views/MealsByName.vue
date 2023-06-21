@@ -27,8 +27,13 @@
           dolor asperiores excepturi?
         </p>
         <div>
-          <a :href="meal.strYoutube" target="_blank" class="px-3 py-2 rounded border-2 border-red-600 hover:bg-red-500 hover:text-white transition-colors">Youtube</a>
-          <router-link to="/"> View </router-link>
+          <a
+            :href="meal.strYoutube"
+            target="_blank"
+            class="px-3 py-2 rounded border-2 border-red-600 hover:bg-red-500 hover:text-white transition-colors"
+            >Youtube</a
+          >
+          <router-link to="/" class=" ml-2 px-3 py-2 rounded border-2 border-red-600 hover:bg-red-500 hover:text-white transition-colors"> View </router-link>
         </div>
       </div>
     </div>
