@@ -22,10 +22,11 @@
       />
       <div class="p-3">
         <h3 class="font-bold">{{ meal.strMeal }}</h3>
+        <h4 class="">{{meal.strCategory}}</h4>
         <p class="mb-4">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum
           dolor asperiores excepturi?
-        </p>   
+        </p>
         <div>
           <a
             :href="meal.strYoutube"
