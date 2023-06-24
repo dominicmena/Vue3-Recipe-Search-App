@@ -18,17 +18,17 @@
 
       <div class="grid grid-cols-1 md:grid-cols-2">
         <div>
-            <h2 class="text-2xl font-semibold mb-3">Ingredients</h2>
+            <h2 class="text-2xl font-semibold mb-2">Ingredients</h2>
             <ul>
                 <template v-for="(el, ind) of new Array(20)">
                     <li v-if="meal[`strIngredient${ind + 1}`]">
-                        {{ meal[`strIngredient${ind + 1}`] }}
+                        {{ind + 1}}. {{ meal[`strIngredient${ind + 1}`] }}
                     </li>
                 </template>
             </ul>
         </div>
         <div>
-            <h2 class="text-2xl font-semibold mb-3">Measurements</h2>
+            <h2 class="text-2xl font-semibold mb-2">Measurements</h2>
         </div>
       </div>
 
