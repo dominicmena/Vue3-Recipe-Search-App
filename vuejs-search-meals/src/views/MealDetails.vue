@@ -37,6 +37,9 @@
                 </template>
             </ul>
         </div>
+        <div>
+            <YouTubeButton/>
+        </div>
       </div>
 
 </template>
@@ -45,6 +48,7 @@
 import { onMounted, ref } from 'vue';
 import { useRoute } from 'vue-router';
 import axiosClient from '../axiosClient'
+import YouTubeButton from '../components/YouTubeButton.vue';
 
 const route = useRoute()
 const meal = ref({})

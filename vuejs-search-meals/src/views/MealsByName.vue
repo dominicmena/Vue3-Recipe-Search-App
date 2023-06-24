@@ -29,7 +29,7 @@
           dolor asperiores excepturi?
         </p>
         <div>
-          <YouTubeButton :href="meal.strYoutube"/>
+          <YouTubeButton :href="meal.strYoutube">Go to Youtube</YouTubeButton>
         </div>
       </div>
     </div>
