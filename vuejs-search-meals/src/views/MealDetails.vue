@@ -45,7 +45,7 @@
             <a
     :href="meal.strSource"
     target="_blank"
-    class="ml-3 px-3 py-2 rounded border-red-600 bg-red-500 text-white hover:bg-white hover:text-black transition-colors"
+    class="ml-3 px-3 py-2 rounded border-red-600 bg-blue-500 text-white hover:bg-white hover:text-black transition-colors"
     > View Source</a>
         </div>
       </div>
