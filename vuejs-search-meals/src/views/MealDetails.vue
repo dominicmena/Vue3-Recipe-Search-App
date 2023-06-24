@@ -15,6 +15,9 @@
             </div>
         </div>
       </div>  
+      <div class="m-3">
+        {{ meal.strInstructions }}
+      </div>
 
       <div class="grid grid-cols-1 sm:grid-cols-2">
         <div>
@@ -37,8 +40,13 @@
                 </template>
             </ul>
         </div>
-        <div>
-            <YouTubeButton/>
+        <div class="mt-4">
+            <YouTubeButton :href="meal.strYoutube">YouTube</YouTubeButton>
+            <a
+    :href="meal.strSource"
+    target="_blank"
+    class="ml-3 px-3 py-2 rounded border-red-600 bg-red-500 text-white hover:bg-white hover:text-black transition-colors"
+    > View Source</a>
         </div>
       </div>
 
