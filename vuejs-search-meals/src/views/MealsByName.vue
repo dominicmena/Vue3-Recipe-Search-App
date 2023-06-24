@@ -29,12 +29,7 @@
           dolor asperiores excepturi?
         </p>
         <div>
-          <a
-            :href="meal.strYoutube"
-            target="_blank"
-            class="px-3 py-2 rounded border-red-600 bg-red-500 text-white hover:bg-white hover:text-black transition-colors"
-            >Youtube</a
-          >
+          <YouTubeButton :href="meal.strYoutube"/>
         </div>
       </div>
     </div>
@@ -46,6 +41,7 @@ import { computed } from "@vue/reactivity";
 import { onMounted, ref } from "vue";
 import store from "../store";
 import { useRoute } from "vue-router";
+import YouTubeButton from "../components/YouTubeButton.vue"
 
 const route = useRoute()
 const keyword = ref("");
