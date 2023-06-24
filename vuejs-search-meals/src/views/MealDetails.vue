@@ -2,13 +2,12 @@
     <div class="w-[800px] mx-auto">
         <pre>{{ meal }}</pre>
         <h1 class="text-5xl font-bold mb-5">{{meal.strMeal}}</h1>
-        <img :src="meal.strMealThumb" alt="strMeal"/>
+        <img :src="meal.strMealThumb" :alt="strMeal"/>
         <div class="grid grid-cols-1 md:grid-cols-3">
             <div>
                 Category: {{ meal.strCategory }}
             </div>
         </div>
-        <img :src="meal.strMealThumb" :alt="meal.strMeal"/>
       </div>  
 
 </template>
@@ -23,7 +22,7 @@ const meal = ref({})
 
 onMounted(() => {
     axiosClient.get(`lookup.php?i=${route.params.id}`).then(({data}) => {
-        meal.value = data.meals
+        meal.value = data.meals[0]
     })
 })
 </script>
