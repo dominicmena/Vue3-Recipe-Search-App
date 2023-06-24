@@ -1,9 +1,9 @@
 <template>
-    <div class="w-[800px] mx-auto">
+    <div class="w-[800px] mx-auto p-8">
         <pre>{{ meal }}</pre>
         <h1 class="text-5xl font-bold mb-5">{{meal.strMeal}}</h1>
         <img :src="meal.strMealThumb" :alt="meal.strMeal"/>
-        <div class="grid grid-cols-1 md:grid-cols-3 text-lg py-2">
+        <div class="grid grid-cols-1 sm:grid-cols-3 text-lg py-2">
             <div>
                 <strong class="font-bold">Category:</strong> {{ meal.strCategory }}
             </div>
@@ -16,7 +16,7 @@
         </div>
       </div>  
 
-      <div class="grid grid-cols-1 md:grid-cols-2">
+      <div class="grid grid-cols-1 sm:grid-cols-2">
         <div>
             <h2 class="text-2xl font-semibold mb-2">Ingredients</h2>
             <ul>
