@@ -15,7 +15,7 @@
 
 <script setup>
 import {computed} from '@vue/reactivity'
-import { onMounted } from 'vue';
+import { onMounted, watch } from 'vue';
 import store from '../store'
 import { useRoute } from 'vue-router';
 import MealItem from '../components/MealItem.vue';
@@ -23,6 +23,10 @@ import MealItem from '../components/MealItem.vue';
 const route = useRoute()
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
 const meals = computed(() => store.state.mealsByLetter)
+
+watch(route, () => {
+store.dispatch('searchMealsByLetter', route.params.letter) 
+})
 
 onMounted(() => {
     store.dispatch('searchMealsByLetter', route.params.letter)
