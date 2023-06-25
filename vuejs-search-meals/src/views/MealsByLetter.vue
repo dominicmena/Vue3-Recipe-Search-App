@@ -10,4 +10,7 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+
+const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
+</script>
