@@ -4,6 +4,6 @@ export function setSearchedMeals(state, meals) {
 export function setMealsByLetter(state, meals) {
     state.mealsByLetter = meals
 }
-export function setMealsByIngredients(state, meals) {
+export function setMealsByIngredient(state, meals) {
     state.setMealsByIngredients = meals
 }
