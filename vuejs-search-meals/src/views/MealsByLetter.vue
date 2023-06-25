@@ -9,7 +9,7 @@
     </router-link>
     </div>
     <div>
-    <pre>{{meals}}</pre>
+    <MealItem v-for="meal of meals" :key="meal.idMeal" :meal="meal" />
   </div>
 </template>
 
@@ -18,6 +18,7 @@ import {computed} from '@vue/reactivity'
 import { onMounted } from 'vue';
 import store from '../store'
 import { useRoute } from 'vue-router';
+import MealItem from '../components/MealItem.vue';
 
 const route = useRoute()
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
