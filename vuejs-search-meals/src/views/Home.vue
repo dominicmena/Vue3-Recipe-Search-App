@@ -1,8 +1,7 @@
 <template>
   <div class="flex flex-col p-8">
-    <h1 class="text-4xl font-bold mb-4">Random Meals</h1>
+    <h1 class="text-4xl font-bold text-orange-500">Random Meals</h1>
     </div>
-
 <Meals :meals="meals"/>
 </template>
 
