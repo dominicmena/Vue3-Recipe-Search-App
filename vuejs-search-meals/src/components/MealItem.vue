@@ -11,10 +11,9 @@
       <h3 class="font-bold">{{ meal.strMeal }}</h3>
       <h4 class="">{{ meal.strCategory }}</h4>
       <p class="mb-4">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum dolor
-        asperiores excepturi?
+        {{ $filters.truncateWords(meal.strInstructions, 20) }}
       </p>
-      <div>
+      <div class="flex items-center justify-between">
         <YouTubeButton :href="meal.strYoutube">Youtube</YouTubeButton>
       </div>
     </div>
